@@ -1,0 +1,90 @@
+from random import random 
+from random import randint
+
+p = int(input('Введите количество элементов массива случайных чисел = '))
+z = int(input('Введите количество элементов массива случайных натуральных чисел = '))
+    
+if p > 0:
+    
+    g = []   
+    for i in range(p):
+        l = random()
+        g.append(l)
+print('Элементы массива случайных чисел',g)
+
+else:
+    print('Заданы неверные параметры при первом вводе')
+    p = int(input('Введите количество элементов случайных чисел = ')
+            
+if z > 0:
+    
+        e = []   
+    for i in range(p):
+        f = randint()
+        e.append(f)
+    print('Элементы массива случайных натуральных чисел'e)
+
+else:
+    print('Заданы неверные параметры при втором вводе')
+    z = int(input('Введите количество элементов случайных натуральных чисел = ')
+
+while for i in range(len(g)-1):
+    if g[i] < g[i+1] # нужно проверить данную запись
+        for i in range(len(g)-1):
+            if g[i] > g[i+1]
+                w = g[i]
+                g[i] = g[i+1]
+                g[i+1] = w
+        else:
+            continue
+    else:
+    
+     File "C:\Users\Admin\AppData\Local\Temp/ipykernel_6592/549099430.py", line 15
+    else:
+    ^
+SyntaxError: invalid syntax
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
