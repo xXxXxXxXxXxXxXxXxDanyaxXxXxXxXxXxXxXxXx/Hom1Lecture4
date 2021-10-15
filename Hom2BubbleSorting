@@ -1,0 +1,109 @@
+from random import random 
+from random import randint
+
+p = input('Введите количество элементов массива случайных чисел = ')
+z = input('Введите количество элементов массива случайных натуральных чисел = ')
+
+try:
+    p.isdigit() and z.isdigit() and p > 0 and z > 0
+    print('Были получены неверные данные')
+    p = input('Введите количество элементов массива случайных чисел = ')
+    z = input('Введите количество элементов массива случайных натуральных чисел = ')
+
+except:
+    
+    p = int(p)
+    z = int(z)
+    
+g = [] 
+    
+for i in range(p):
+    l = random()
+    g.append(l)
+print('Элементы массива случайных чисел',g)
+            
+e = [] 
+ 
+for i in range(z):
+    f = randint(0,1000)
+    e.append(f)
+    
+print('Элементы массива случайных натуральных чисел',e)
+
+quantity = 0
+for l in range(0,len(e)-1):
+    for i in range(0,len(e)-1):
+        if g[i] > g[i+1]:
+            w = g[i]
+            g[i] = g[i+1]
+            g[i+1] = w
+            print(g)
+            quantity += 1
+print('Quantity of swaps = ',quantity)
+print('Результат сортировки пузырьком -> ', g)
+
+quantity = 0
+for l in range(0,len(e)-1):
+    for i in range(0,len(e)-1):
+        if e[i] > e[i+1]:
+            w = e[i]
+            e[i] = e[i+1]
+            e[i+1] = w
+            print(e)
+            quantity += 1
+print('Quantity of swaps = ',quantity)
+print('Результат сортировки пузырьком -> ', e)    from random import random 
+from random import randint
+
+p = input('Введите количество элементов массива случайных чисел = ')
+z = input('Введите количество элементов массива случайных натуральных чисел = ')
+
+try:
+    p.isdigit() and z.isdigit() and p > 0 and z > 0
+    print('Были получены неверные данные')
+    p = input('Введите количество элементов массива случайных чисел = ')
+    z = input('Введите количество элементов массива случайных натуральных чисел = ')
+
+except:
+    
+    p = int(p)
+    z = int(z)
+    
+g = [] 
+    
+for i in range(p):
+    l = random()
+    g.append(l)
+print('Элементы массива случайных чисел',g)
+            
+e = [] 
+ 
+for i in range(z):
+    f = randint(0,1000)
+    e.append(f)
+    
+print('Элементы массива случайных натуральных чисел',e)
+
+quantity = 0
+for l in range(0,len(e)-1):
+    for i in range(0,len(e)-1):
+        if g[i] > g[i+1]:
+            w = g[i]
+            g[i] = g[i+1]
+            g[i+1] = w
+            print(g)
+            quantity += 1
+print('Quantity of swaps = ',quantity)
+print('Результат сортировки пузырьком -> ', g)
+
+quantity = 0
+for l in range(0,len(e)-1):
+    for i in range(0,len(e)-1):
+        if e[i] > e[i+1]:
+            w = e[i]
+            e[i] = e[i+1]
+            e[i+1] = w
+            print(e)
+            quantity += 1
+print('Quantity of swaps = ',quantity)
+print('Результат сортировки пузырьком -> ', e)    
